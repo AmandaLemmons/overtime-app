@@ -6,7 +6,7 @@
  - Post -> date:date rationale:text
  - AdminUser -> STI
 
-##Features: 
+##Features:
   - Approval Workflow
   - SMS Sending -> link to approval or overtime input
   - Administrate admin dashboard
@@ -14,4 +14,4 @@
   - Needs to be docuemtned if employee didnt log overtime
 
 ## UI
-  Bootstrap -> formating
+  - Bootstrap -> formating
