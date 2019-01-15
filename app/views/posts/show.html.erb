@@ -1,1 +1,21 @@
-<%= @post.inspect %>
+<div>
+  <h2> <%= @post.rationale %></h2>
+</div>
+<hr>
+<div class="well">
+  <div>
+    <h3> <span>Overtime Amout Requested: <%= @post.overtime_request %></span></h3>
+  </div>
+  <div>
+    <h3> <span>Employee: <%= @post.user.full_name %></span></h3>
+  </div>
+  <div>
+    <h3> <span>Date: <%= @post.date %></span></h3>
+  </div>
+  <div>
+    <h3> <span>Current Stage of Approval: <%= @post.status %></span></h3>
+  </div>
+</div>
+
+<hr>
+<%= link_to "Edit", edit_post_path(@post), class: "btn btn-primary" if policy(@post).update? %>
